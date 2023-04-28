@@ -8,23 +8,21 @@
     <link rel="stylesheet" href="../css/app.css">
 </head>
 <body>
-        <h1>{{ $title }}</h1>
-        <h2>{{ $subtitle }}</h2>
+        <h1>{{ $title['title'] }}</h1>
+        <h2>{{ $title['subtitle'] }}</h2>
 
         <hr> 
 
         <nav>
             <ul class="nav-bar">
-                <li><a href="/">{{ $home }}</a></li>
-                <li><a href="/info">{{ $info }}</a></li>
-                <li><a href="/about">{{ $about }}</a></li>
+                <li><a href="/">{{ $nav['home'] }}</a></li>
+                <li><a href="/info">{{ $nav['info'] }}</a></li>
+                <li><a href="/about">{{ $nav['about'] }}</a></li>
             </ul>
         </nav>
 
         <hr>
-        
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae temporibus assumenda voluptas velit nisi voluptatem, ut illo quas eum totam nam, dolores sint provident neque, nihil laudantium repudiandae voluptates quo!</p>
 
-        
 </body>
 </html>

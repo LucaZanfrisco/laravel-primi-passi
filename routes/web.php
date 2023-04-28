@@ -16,15 +16,16 @@ use Whoops\Run;
 */
 
 Route::get('/', function () {
-    $title = 'Hello World';
-    $subtitle = 'Welcome to a new World';
-
     $data = [
-        'title' => 'Hello World',
-        'subtitle' => $subtitle, 
-        'home' => 'Home',
-        'info' => 'Info',
-        'about' => 'About'
+        'title' => [
+            'title' => 'Hello World',
+            'subtitle' => 'Welcome to Laravel', 
+        ],
+        'nav' => [
+            'home' => 'Home',
+            'info' => 'Info',
+            'about' => 'About'
+        ]
     ];
     return view('home',$data);
 });
